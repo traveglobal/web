@@ -1,0 +1,47 @@
+.main_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    z-index: 70;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.main_header .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.ui.main_header .ui.secondary.inverted.pointing.menu {
+    border: none;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .main_header h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+}

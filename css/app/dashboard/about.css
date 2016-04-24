@@ -1,0 +1,20 @@
+.ui.grid.about_container {
+    vertical-align: middle;
+    display: table-cell;
+}
+        
+.about_container .column {
+    text-align: center;
+}
+        
+.about_container .column .icon {
+    font-size: 4em;
+}
+        
+.about_container .column h4 {
+    font-size: 2em;
+}
+        
+.about_container .column h6 {
+    color: #FFFFFF;
+}
