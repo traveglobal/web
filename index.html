@@ -25,6 +25,12 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        .ui.grid.recomend_item_container {
+            margin: 0 !important;
+            padding-top: 60px;
+            padding-left: 1em;
+        }
     </style>
 </head>
 
@@ -46,11 +52,11 @@
             <div href="#" class="header item">
                 <i class="travel icon"></i> Project Name
             </div>
-            <a href="#firstPage" data-menuanchor="firstPage" class="item active">First slide</a>
-            <a href="#secondPage" data-menuanchor="secondPage" class="item">Second slide</a>
-            <a href="#3rdPage" data-menuanchor="3rdPage" class="item">Third slide</a>
+            <a href="#firstPage" data-menuanchor="firstPage" class="item active">Home</a>
+            <a href="#secondPage" data-menuanchor="secondPage" class="item">About</a>
+            <a href="#3rdPage" data-menuanchor="3rdPage" class="item">Request Item</a>
             <div class="right item">
-                <a class="ui inverted button">Log in</a>
+                <a href=""class="ui inverted button">Log in</a>
                 <a class="ui inverted button">Sign Up</a>
             </div>
         </div>
@@ -62,22 +68,20 @@
         </div>
         <div class="js_section ui three column grid about_container" id="js_about_box">
         </div>
-        <div class="js_section" id="section2">
-            <div class="intro">
-                <h1>No CSS3? No problem!</h1>
-                <p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
-            </div>
+        <div class="js_section ui five column grid recomend_item_container" id="js_recomend_item_box">
+
         </div>
     </div>
 
     <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    
     <script src="js/lib/require.js"></script>
     <script>
         require(['js/config/common'], function() {
             require(['app.index']);
         });
     </script>
-    <script src="js/semantic.min.js"></script>
 </body>
 
 </html>

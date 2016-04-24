@@ -10,7 +10,7 @@ requirejs.config({
         'underscore': ['lib/underscore.min'],
         'moment': ['lib/moment.min'],
         'full_page': ['lib/jquery.fullPage.min'],
-        'semantic': ['lib/semantic.min'],
+        'semantic': ['semantic.min'],
 
         /* configurations */
         'config.common_css': ['config/common_css'],
@@ -68,9 +68,9 @@ requirejs.config({
         'app.about.provider': ['app/dashboard/about/provider'],
         'app.about.constructor': ['app/dashboard/about/constructor'],
 
-        // 'app.recomend_product.manager': ['app/dashboard/recomend_product/manager'],
-        // 'app.recomend_product.provider': ['app/dashboard/recomend_product/provider'],
-        // 'app.recomend_product.constructor': ['app/dashboard/recomend_product/constructor'],
+        'app.recomend_item.manager': ['app/dashboard/recomend_item/manager'],
+        'app.recomend_item.provider': ['app/dashboard/recomend_item/provider'],
+        'app.recomend_item.constructor': ['app/dashboard/recomend_item/constructor'],
 
 
         // 'app.member.manager': ['app/member/manager'],
