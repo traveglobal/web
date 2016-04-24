@@ -13,7 +13,6 @@
     fn_initialize = function(requireCSS, moment, foreach, template) {
 
         requireCSS([
-            'flag_icon',
             'component.product_card'
         ]);
 
