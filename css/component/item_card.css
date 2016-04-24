@@ -1,0 +1,21 @@
+  .ui.ribbon .flag {
+      vertical-align: middle;
+  }
+  
+  .ui.fluid.image img {
+      height: 15em;
+      height: 15em;
+  }
+  
+  .center {
+      text-align: center;
+  }
+  
+  .shadow.hoverable {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .shadow.hoverable:hover {
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }

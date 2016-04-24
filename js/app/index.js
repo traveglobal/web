@@ -5,16 +5,17 @@
 
     arr_dependency = [
         'jquery',
+        'semantic',
         'util.require_css',
         'full_page',
         'app.manager',
         'app.about.manager',
 
-        // 'app.recomend_product.manager',
+        'app.recomend_item.manager',
         // 'app.member.manager',
     ];
 
-    fn_initialize = function ($, requireCSS, fullPage, Test, AboutManager) {
+    fn_initialize = function ($, semantic, requireCSS, fullPage, Test, AboutManager, RecomendItemManager) {
 
         requireCSS([
             'full_page',
@@ -22,7 +23,6 @@
         ]);
 
         var fn_init = (function () {
-
             $('#fullpage').fullpage({
                 //Navigation
                 menu: '#js_menu',
@@ -35,9 +35,7 @@
                 slidesNavPosition: 'bottom',
                 css3: true,
                 sectionsColor: ['#1bbc9b', '#3B3F45', '#7BAABE'],
-
                 fixedElements: '#header, .footer',
-
                 //Custom selectors
                 sectionSelector: '.js_section',
                 slideSelector: '.js_slide',
@@ -47,9 +45,9 @@
             //     'container': document.querySelector('#fullPage')
             // });
 
-            // RecomendItemManager.init({
-            //     'container': document.querySelector('#js_recomend_product_box')
-            // });
+            RecomendItemManager.init({
+                'container': document.querySelector('#js_recomend_item_box')
+            });
 
             AboutManager.init({
                 'container': document.querySelector('#js_about_box')
